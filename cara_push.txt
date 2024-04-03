@@ -1,0 +1,9 @@
+git add . && git commit -m "update" && git push
+
+server: git pull origin main
+sudo docker stop <nama container>
+sudo docker rm <nama container>
+
+sudo docker build -t <nama image> .
+
+sudo docker run -p 8081:8081 -d --name<nama container> <nama image>
